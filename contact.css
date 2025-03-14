@@ -1,0 +1,115 @@
+#contactus {
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/office.jpg);
+    background-size: cover; 
+    background-position: center c;
+    background-repeat: no-repeat; 
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.left-text-content {
+    padding-right: 20px;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+.contact-info li i {
+    margin-right: 10px;
+    color: #2b2b2b;
+}
+
+.contact-form form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #f44336;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: red;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+iframe {
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .left-text-content {
+        padding-right: 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info li {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
