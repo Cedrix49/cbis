@@ -233,9 +233,26 @@
         </div>
     </section>
 
-    <button id="scrollTopBtn" class="scroll-top-btn">
-        <i class="fa fa-arrow-up"></i> 
-    </button>
+    <div class="scroll-icon-box">
+        <a href="#" class="scroll-btn">
+            <i class="lni lni-mouse"></i>
+            <p>Scroll Top</p>
+        </a>
+    </div>
+    <script>
+        document.addEventListener("scroll", function () {
+            let scrollButton = document.querySelector(".scroll-btn");
+            let scrollHeight = document.documentElement.scrollHeight;
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let clientHeight = document.documentElement.clientHeight;
+            
+            if (scrollTop + clientHeight >= scrollHeight * 0.8) { // 80% down
+                scrollButton.classList.add("show");
+            } else {
+                scrollButton.classList.remove("show");
+            }
+        });
+    </script>
     
 
     <footer class="footer">
